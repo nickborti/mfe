@@ -10,7 +10,8 @@ const prodConfig = {
     output: {
         // The format will be name of the file
         // Then hash of the content of the file to prevent caching issues
-        filename: '[name].[contenthash].js' 
+        filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/',
     },
     plugins: [
         new ModuleFederationPlugin({
